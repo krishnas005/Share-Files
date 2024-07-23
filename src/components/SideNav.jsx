@@ -1,22 +1,3 @@
-
-//   return (
-//     <div>
-//       <div className='p-5 border-b'>
-//         <Image src="/logo.svg" alt="logo" width={50} height={50} />
-//       </div>
-//       <div className='flex flex-col float-left'>
-//       {menuItems.map((item, index) => (
-//         <button>
-//             <item.icon />
-//             <h2>{item.name}</h2>
-//         </button>
-//       ))}
-//       </div>
-//     </div>
-//   )
-// }
-
-
 "use client";
 
 import { File, Shield, Upload } from 'lucide-react'
