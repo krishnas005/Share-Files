@@ -1,18 +1,17 @@
-import DashboardTopHeader from '@/components/DashboardTopHeader'
-import SideNav from '@/components/SideNav'
-import React from 'react'
+"use client";
 
-export default function layout({ children }) {
+import DashboardTopHeader from '@/components/DashboardTopHeader';
+import React from 'react';
+
+export default function Layout({ children }) {
+
   return (
-    <div>
-      <div className='w-64 h-full flex-col fixed inset-y-0 z-50'>
-        <SideNav />
-      </div>
-      <div className='ml-64'>
-        <DashboardTopHeader />
+    <div className="relative min-h-screen">
+      <div>
+        <DashboardTopHeader/>
         {children}
       </div>
-
     </div>
-  )
+  );
 }
+

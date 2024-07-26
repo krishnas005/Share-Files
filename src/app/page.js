@@ -1,11 +1,16 @@
 import HeroSection from "@/components/HeroSection";
 import Navbar from "@/components/Navbar";
+import PageWrapper from "./page-wrapper";
+import NewSection from "@/components/NewSection";
 
 export default function Home() {
   return (
-    <div className="">
+    <div>
       <Navbar />
-      <HeroSection />
+      {/* <PageWrapper> */}
+        {/* <HeroSection /> */}
+        <NewSection />
+      {/* </PageWrapper> */}
     </div>
   )
 }

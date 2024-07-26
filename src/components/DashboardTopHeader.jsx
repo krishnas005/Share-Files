@@ -1,16 +1,17 @@
-import { UserButton } from '@clerk/nextjs'
-import { AlignJustify } from 'lucide-react'
-import Image from 'next/image'
-import React from 'react'
+import { UserButton } from '@clerk/nextjs';
+import Image from 'next/image';
+import Link from 'next/link';
+import React from 'react';
 
 function DashboardTopHeader() {
   return (
-    <div className='flex p-5 border-b items-center first-letter:justify-between md:justify-end'>
-        <AlignJustify className='md:hidden'/>
-        <Image src="/logo.svg" alt="logo" width={50} height={50} className='md:hidden' />
+    <div className="flex p-5 border-b items-center justify-between">
+      <Link href="/"><Image src="/logo.svg" alt="logo" width={50} height={50} className="" /></Link>
+      <div className='text-4xl'>
         <UserButton />
+      </div>
     </div>
-  )
+  );
 }
 
-export default DashboardTopHeader
+export default DashboardTopHeader;
